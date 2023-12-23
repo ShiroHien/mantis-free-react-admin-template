@@ -41,9 +41,9 @@ const barChartOptions = {
   }
 };
 
-// ==============================|| MONTHLY BAR CHART ||============================== //
+// ==============================||  BAR CHART ||============================== //
 
-const MonthlyBarChart = () => {
+const BarChart = () => {
   const theme = useTheme();
 
   const { primary, secondary } = theme.palette.text;
@@ -82,4 +82,4 @@ const MonthlyBarChart = () => {
   );
 };
 
-export default MonthlyBarChart;
+export default BarChart;

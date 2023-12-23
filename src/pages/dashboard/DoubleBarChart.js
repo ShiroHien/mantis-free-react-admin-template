@@ -79,9 +79,9 @@ const columnChartOptions = {
   ]
 };
 
-// ==============================|| SALES COLUMN CHART ||============================== //
+// ==============================|| DoubleBarChart ||============================== //
 
-const SalesColumnChart = () => {
+const DoubleBarChart = () => {
   const theme = useTheme();
 
   const { primary, secondary } = theme.palette.text;
@@ -145,4 +145,4 @@ const SalesColumnChart = () => {
   );
 };
 
-export default SalesColumnChart;
+export default DoubleBarChart;

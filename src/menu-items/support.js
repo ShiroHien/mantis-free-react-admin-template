@@ -11,7 +11,6 @@ const icons = {
 
 const support = {
   id: 'support',
-  title: 'Support',
   type: 'group',
   children: [
     {
@@ -20,15 +19,6 @@ const support = {
       type: 'item',
       url: '/sample-page',
       icon: icons.ChromeOutlined
-    },
-    {
-      id: 'documentation',
-      title: 'Documentation',
-      type: 'item',
-      url: 'https://codedthemes.gitbook.io/mantis/',
-      icon: icons.QuestionOutlined,
-      external: true,
-      target: true
     }
   ]
 };
