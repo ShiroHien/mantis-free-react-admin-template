@@ -43,7 +43,7 @@ const barChartOptions = {
 
 // ==============================||  BAR CHART ||============================== //
 
-const BarChart = () => {
+const TKDaGuiGD = () => {
   const theme = useTheme();
 
   const { primary, secondary } = theme.palette.text;
@@ -82,4 +82,4 @@ const BarChart = () => {
   );
 };
 
-export default BarChart;
+export default TKDaGuiGD;

@@ -79,9 +79,9 @@ const columnChartOptions = {
   ]
 };
 
-// ==============================|| DoubleBarChart ||============================== //
+// ==============================|| DoubleBarChart- Diem tap ket ||============================== //
 
-const DoubleBarChart = () => {
+const TKDiemTK = () => {
   const theme = useTheme();
 
   const { primary, secondary } = theme.palette.text;
@@ -145,4 +145,4 @@ const DoubleBarChart = () => {
   );
 };
 
-export default DoubleBarChart;
+export default TKDiemTK;
