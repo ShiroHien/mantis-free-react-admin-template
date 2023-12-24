@@ -30,11 +30,11 @@ const columnChartOptions = {
     colors: ['transparent']
   },
   xaxis: {
-    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
   },
   yaxis: {
     title: {
-      text: '$ (thousands)'
+      text: 'Số đơn hàng'
     }
   },
   fill: {
@@ -43,7 +43,7 @@ const columnChartOptions = {
   tooltip: {
     y: {
       formatter(val) {
-        return `$ ${val} thousands`;
+        return `${val} đơn`;
       }
     }
   },
@@ -91,14 +91,15 @@ const TKToanQuoc = () => {
   const primaryMain = theme.palette.primary.main;
   const successDark = theme.palette.success.dark;
 
+  // sửa số liệu here
   const [series] = useState([
     {
-      name: 'Net Profit',
-      data: [180, 90, 135, 114, 120, 145]
+      name: 'Thành công',
+      data: [180, 90, 135, 114, 120, 145, 150, 135, 114, 120, 145, 150]
     },
     {
-      name: 'Revenue',
-      data: [120, 45, 78, 150, 168, 99]
+      name: 'Thất bại',
+      data: [20, 5, 7, 15, 16, 9, 11, 7, 15, 16, 9, 11]
     }
   ]);
 
@@ -107,7 +108,7 @@ const TKToanQuoc = () => {
   useEffect(() => {
     setOptions((prevState) => ({
       ...prevState,
-      colors: [warning, primaryMain],
+      colors: [primaryMain, warning],
       xaxis: {
         labels: {
           style: {
